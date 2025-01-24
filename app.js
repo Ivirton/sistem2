@@ -8,7 +8,7 @@ const { initializeSocket } = require('./src/controller/socketController');
 require('./src/model/sincronizar');
 
 
-initializeSocket
+
 const app = express();
 const server = http.createServer(app);
 initializeSocket(server)
