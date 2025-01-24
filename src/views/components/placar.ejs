@@ -30,7 +30,7 @@
                         </div>
                         <small>Altura</small>
                         <div class="PB-range-slider-div">
-                            <input type="range" min="0" max="100" v-model="transmissao.placar_y" class="PB-range-slider"
+                            <input type="range" min="-20" max="100" v-model="transmissao.placar_y" class="PB-range-slider"
                                 v-on:input="placar_y_tx(<%= transmissao.id_transmissao %>,<%= transmissao.id_placar %>)">
                             <small class="PB-range-slidervalue">{{transmissao.placar_y}}%</small>
                         </div>

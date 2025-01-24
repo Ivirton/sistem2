@@ -13,25 +13,104 @@
 
     <link rel="stylesheet" href="receptor/style.css">
 </head>
+<style>
+    #tempo {
+        left: 366px;
+        position: absolute;
+        color: #ffffff;
+        top: 217px;
+    }
+
+    #img_placar {
+
+        position: absolute;
+        width: 800px;
+    }
+
+    .cronometro {
+        left: 387px;
+        position: absolute;
+        top: 217px;
+    }
+
+    #time1 {
+        width: 223px;
+        text-transform: uppercase;
+        margin-left: 15px;
+        margin-right: 15px;
+        left: 68px;
+        top: 190px;
+        text-align: center;
+        position: absolute;
+    }
+
+.placar{
+    position: absolute;
+}
+    #time2 {
+        width: 210px;
+        text-transform: uppercase;
+        margin-left: 15px;
+        margin-right: 15px;
+        left: 454px;
+        top: 190px;
+        text-align: center;
+        position: absolute;
+    }
+
+    #pontostime1 {
+        text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: 15px;
+    left: 341px;
+    top: 175px;
+    text-align: center;
+    position: absolute;
+    font-size: 29px;
+    }
+
+    #pontostime2 {
+        text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: 15px;
+    left: 404px;
+    top: 175px;
+    text-align: center;
+    position: absolute;
+    font-size: 29px;
+    }
+    #x{
+        width: 310px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: 15px;
+    left: 227px;
+    top: 182px;
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    }
+</style>
 
 <body>
     <div id="app">
+
+       
         <main class="widgets_content">
-            <section v-show="transmissao.placar_visibilidade" class="glass scorebord"
-                :style="{ left: transmissao.placar_x + 'vw', top: transmissao.placar_y + 'vh',zoom: transmissao.placar_z + '%'}">
-                <strong>{{transmissao.partida}}t</strong>
+            <section class="placar" v-show="transmissao.placar_visibilidade"  :style="{ left: transmissao.placar_x + 'vw', top: transmissao.placar_y + 'vh',zoom: transmissao.placar_z + '%'}"  >
+                <img id="img_placar" style="position: absolute;" src="/pictures/scorebord/1.png">
+                <strong id="tempo">{{transmissao.partida}}t</strong>
                 <div class="cronometro">
                     <strong>{{ transmissao.minuto < 10 ? '0' + transmissao.minuto : transmissao.minuto }}</strong>
                             <strong>:</strong>
-                            <strong>{{ transmissao.segundo < 10 ? '0' + transmissao.segundo :
-                                    transmissao.segundo}}</strong>
+                            <strong>{{ transmissao.segundo < 10 ? '0' + transmissao.segundo : transmissao.segundo}}</strong>
                 </div>
-                |
-                <strong class="name">{{transmissao.nome_time1}}</strong>
-                <strong class="points  glass">{{transmissao.pontos_time1}}</strong>
-                <strong class="points glass">{{transmissao.pontos_time2}}</strong>
-                <strong class="name">{{transmissao.nome_time2}}</strong>
-
+                <strong id="time1" class="name">{{transmissao.nome_time1}}</strong>
+                <strong id="time2" class="name">{{transmissao.nome_time2}}</strong>
+                <strong id="pontostime1">{{transmissao.pontos_time1}}</strong>
+                <strong id="x">x</strong>
+    
+                <strong id="pontostime2">{{transmissao.pontos_time2}}</strong>
             </section>
             <section class="rotativo " v-show="transmissao.rotativo_visibilidade"
                 :style="{ left: transmissao.rotativo_x + 'vw', top: transmissao.rotativo_y + 'vh',zoom: transmissao.rotativo_z + '%'}">
