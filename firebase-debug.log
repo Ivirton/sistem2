@@ -1,0 +1,29 @@
+[debug] [2025-01-24T01:36:27.886Z] ----------------------------------------------------------------------
+[debug] [2025-01-24T01:36:27.889Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ivirt\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-01-24T01:36:27.889Z] CLI Version:   13.29.2
+[debug] [2025-01-24T01:36:27.889Z] Platform:      win32
+[debug] [2025-01-24T01:36:27.889Z] Node Version:  v20.9.0
+[debug] [2025-01-24T01:36:27.889Z] Time:          Thu Jan 23 2025 22:36:27 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2025-01-24T01:36:27.889Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-24T01:36:27.895Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-24T01:36:27.895Z] > authorizing via signed-in user (ivirton.nayron@acad.ifma.edu.br)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ivirt\OneDrive\Área de Trabalho\IFMA\3 PERÍODO\ESTRUTURA DE DADOS 2\sistem2
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
