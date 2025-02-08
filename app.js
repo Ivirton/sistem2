@@ -7,7 +7,7 @@ const router = require('./src/router/router');
 const { initializeSocket } = require('./src/controller/socketController');
 require('./src/model/sincronizar');
 
-
+//altecao do dia 08/02/2025
 
 const app = express();
 const server = http.createServer(app);
